@@ -1,0 +1,32 @@
+12-23-2019
+
+ls -a -al -alt -altr ## 모두 모두자세히 모두자세히시간순 모두자세히역시간순 목록 불러오기
+git add (파일명) // 파일을 git이 관리하도록 허용
+git status // 현재 git의 상태 표시
+git commit -m "쓰고 싶은 코멘트"
+git push ## 현재까지의 commit한 상태를 업로드
+
+
+12-26-2019
+
+cmd에서 java 컴파일 명령어
+javac (파일명.java)
+
+(JVM을 통한) 인터프리터 실행시 java (클래스파일명) // class 불필요
+(클래스파일명) 코드 내에는 main 필요
+public class 클래스파일 {
+    public static void main(String [] args) { ## 메인 함수
+        (코드 내용)
+    }
+}
+
+system.out.println("문자열"); // 자바의 모니터 화면 출력 문장 \n 포함
+system.out.print("문자열"); // \n 미포함
+
+// 한 줄 주석
+/*
+여러 줄 주석
+*/
+/**
+class 파일을 자바 문서로 만들 때, 주석 부분이 포함되도록
+*/
