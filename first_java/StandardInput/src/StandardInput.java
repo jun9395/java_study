@@ -32,6 +32,7 @@ public class StandardInput {
             String[] strarr = new BufferedReader(new InputStreamReader(System.in)).readLine().split("\\."); // .은 기본적으로 . 인자이므로 이렇게 써야 한다
 
             System.out.printf("%d.%02d.%02d\n", Integer.parseInt(strarr[0]), Integer.parseInt(strarr[1]), Integer.parseInt(strarr[2]));
+        } catch (Exception e) {}
 
 
             // 3. Scanner로 str 형태로 받기 (int, double로 받기 쉬움)
@@ -43,7 +44,6 @@ public class StandardInput {
 ////            double sc_double = input.nextDouble();
 //
 //            System.out.printf("%d %d\n", sc_int, sc_int2);
-        } catch (Exception e) {}
     }
 }
 
