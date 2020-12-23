@@ -20,16 +20,14 @@ public class MovingAnt {
                 while (true) {
                     flag = false;
                     while (table[x][y + 1].equals("0")) {
-                        y++;
-                        table[x][y] = "9";
+                        table[x][++y] = "9";
                     }
                     if (table[x][y + 1].equals("2")) {
-                        table[x][y + 1] = "9";
+                        table[x][++y] = "9";
                         break;
                     }
                     while (table[x + 1][y].equals("0")) {
-                        x++;
-                        table[x][y] = "9";
+                        table[++x][y] = "9";
                         if (table[x][y + 1].equals("0")) {
                             flag = true;
                             break;
@@ -37,7 +35,7 @@ public class MovingAnt {
                     }
                     if (flag) continue;
                     if (table[x + 1][y].equals("2")) {
-                        table[x + 1][y] = "9";
+                        table[++x][y] = "9";
                         break;
                     }
                     if (table[x][y + 1].equals("1"))
