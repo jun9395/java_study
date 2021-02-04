@@ -26,7 +26,7 @@
 
 
 
-![Intent_process]()
+![Intent_process](0204_Android_Four_Component.assets/Intent.png)
 
 
 
