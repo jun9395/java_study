@@ -22,7 +22,7 @@
 
 
 
-### Intent
+### 0. Intent
 
 
 
@@ -44,7 +44,7 @@
 
 
 
-### 액티비티 실행하기
+### 1. 액티비티 실행하기
 
 - 애플리케이션을 실행하면 AndroidManifest.xml에서 intent-filter의 name이 android.intent.action.MAIN으로 주어진 Activity를 우선적으로 실행하게 된다
 
@@ -64,7 +64,7 @@
 
 
 
-### OnResultActivity
+### 2. OnResultActivity
 
 
 
@@ -84,7 +84,7 @@
 
 
 
-### 데이터 전달하기
+### 3. 데이터 전달하기
 
 
 
@@ -100,5 +100,33 @@
 #### Intent에서 데이터 가져오기
 
 - Intent에 세팅된 데이터는 get자료형Extra 메서드를 이용해 가져온다
+
+
+
+
+
+
+
+### 4. 객체 전달하기
+
+> 정확히는 객체를 전달하는 것이 아니라, Intent에 객체를 구성하는 데 필요한 데이터를 담아 Parcel로 다른 액티비티에 전달하고, 전달받은 액티비티에서 새로 객체를 만들어 Parcel에 담긴 데이터를 담는 것이다
+
+
+
+#### 4.1 Parcelable
+
+- Intent를 통해 객체를 전달할 때는 Parcleable 인터페이스를 구현한 객체만 가능
+- Parcelable 인터페이스는 전달받은 쪽에서 객체를 복원할 때 필요한 정보를 가진 부분을 의미한다
+
+
+
+##### 4.1.1 Override Method
+
+- writeToParcel : 객체를 Intent에 담을 때 자동으로 호출되는 메서드
+  - 첫 번째 매개 변수로 들어오는 Parcel 객체에 객체 복원을 위해 필요한 정보를 담는다
+- describeContents
+
+
+
 
 
