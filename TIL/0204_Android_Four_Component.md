@@ -130,3 +130,80 @@
 
 
 
+
+
+### 5. 다른 애플리케이션의 액티비티 사용하기
+
+#### 5.1 Intent Filter
+
+- 안드로이드의 4대 구성요소는 모두 AndroidManifest.xml에 기록되어야 한다
+- 다른 애플리케이션을 실행할 수 있도록 하려면 Intent Filter를 이용해 이름을 설정해주면 된다
+
+
+
+- 만약 여러 개의 동일한 이름의 액티비티가 있는 경우, 실행할 액티비티를 선택하라고 한다
+
+  ![ifYouActKindsOfActivities](0204_Android_Four_Component.assets/ifactkindsofactivitied.jpg)
+
+
+
+
+
+
+
+
+
+### 6. Activity Action
+
+- 안드로이드에서 제공되는 기본 애플리케이션 중 다른 애플리케이션이 사용할 수 있도록 Activity가 제공하는 것들이 있다
+
+
+
+
+
+
+
+
+
+### 7. Broad Cast Receiver
+
+
+
+![broad_cast_receiver](0204_Android_Four_Component.assets/broadcastreceiver.jpg)
+
+- 위 상황에서, Test1이라는 메시지에 반응하는 Receiver는 2개가 있으므로 이 코드들이 같이 작동한다
+
+
+
+
+
+#### 7.1 명시적 인텐트
+
+- 안드로이드의 4대 구성 요소 중 하나의 동작을 위해 동작하고자 하는 구성 요소의 클래스명을 직접 기술하여 동작하는 것
+- 한 번에 하나만 실행 가능
+
+
+
+
+
+#### 7.2 암시적 인텐트
+
+- 안드로이드의 4대 구성 요소 중 원하는 구성요소를 실행하기 위해 Intent Filter를 통해 설정한 이름을 이용하는 것
+- 동일한 이름이 여러 개 있을 경우에는 Activity인 경우에는 선택하여 실행, 그 오의 경우에는 모두 실행한다
+
+
+
+##### 7.2.1 안드로이드 8.0 이후 제약사항
+
+- 안드로이드는 높은 하드웨어 사양을 요구한다는 단점이 있음
+- 일부를 제외한 모든 Broad Cast Receiver는 암시적 인텐트로 실행할 경우 반드시 코드를 통해 리시버를 등록하는 작업을 해야한 가능
+  - Broad Cast Receiver를 소유한 애플리케이션이 실행 중에만 사용할 수 있도록 제한
+
+
+
+
+
+
+
+
+
