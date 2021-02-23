@@ -205,5 +205,15 @@
 
 
 
+### 8. 시스템 메시지
+
+> https://developer.android.com/guide/components/broadcast-exceptions.html
+
+- 단말기에서 사건이 발생했을 경우 각 사건마다 정해놓은 이름으로 시스템 메시지를 발생
+- 이 메시지와 동일한 이름으로 설정된 Broad Cast Receiver를 찾아 개발자의 코드 동작 가능
+- 안드로이드 8.0부터는 사용할 수 있는 시스템 메시지의 수가 감소
+
+- 시스템 메시지 관련은 권한을 주어야 하는 경우가 많음
+
 
 
