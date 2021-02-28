@@ -47,3 +47,25 @@
 
 
 
+
+
+### 3. ListFragment
+
+- Fragment 내에 ListView를 사용할 때 보다 편리하게 구성할 수 있도록 제공되는 Fragment
+  - Fragment 안에 있는 ListView가 딱 하나만 있어야 한다
+- ListView의 id가 @android:id/list로 설정되어 있을 경우 자동으로 ListView를 찾아 관리
+  - Fragment가 아니라 ListFragment를 상속할 경우에
+
+
+
+
+
+### 4. DialogFragment
+
+- AlertDialog를 Fragment로 만들어 사용할 수 있도록 제공되는 Fragment
+- AlertDialog와 큰 차이는 없다
+- 현업에서 개발하다보면 DialogFragment를 사용하는 것이 더 편할 때가 종종 있다
+  - AlertDialog는 안드로이드에서 제공하는 대로 사용하게 되지만, DialogFragment는 커스텀이 용이하다
+
+
+
